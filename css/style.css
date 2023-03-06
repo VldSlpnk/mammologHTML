@@ -1,0 +1,1039 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #f8faff;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+.main-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+header {
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+.header-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.logo-description {
+  max-width: 250px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #3f8abf;
+}
+.work-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.work-info span {
+  display: block;
+  padding: 5px 0;
+  max-width: 250px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #3f8abf;
+}
+
+.work-hours span span {
+  font-weight: bold;
+  display: inline;
+}
+.header-holder .address {
+  text-align: right;
+}
+.header-holder .address span {
+  position: relative;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.header-holder .address span:first-child {
+  padding-top: 0;
+}
+.header-holder .address span:last-child {
+  padding-bottom: 0;
+}
+.header-holder .address span:first-child::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: rgba(226, 243, 255, 0.3) url("../img/locatiom-marker-icon.jpg")
+    no-repeat center;
+  display: inline-block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 4px;
+}
+.header-holder .address span:last-child::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: rgba(226, 243, 255, 0.3) url("../img/phone-icon.jpg") no-repeat
+    center;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  top: 4px;
+}
+.homepage-uptitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #35434a;
+}
+h2 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #002335;
+  padding: 15px 0 5px;
+}
+.homepage_title {
+  font-family: "Inter";
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #0f5172;
+  padding-bottom: 15px;
+}
+.def_button {
+  width: 227px;
+  height: 49px;
+  background: #45abe5;
+  box-shadow: 0px 4px 19px rgba(73, 134, 169, 0.44);
+  border-radius: 40px;
+  color: #ffffff;
+  margin-top: 35px;
+}
+.def_button_transparent {
+  width: 227px;
+  height: 49px;
+  background: none;
+  box-shadow: 0px 4px 19px rgba(73, 134, 169, 0.44);
+  border-radius: 40px;
+  color: #45abe5;
+  margin: 35px 0 0 25px;
+}
+.button-holder {
+  margin-left: 30px;
+}
+.body-holder {
+  margin-top: 85px;
+}
+.consultation_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 90px;
+}
+.diagnostic {
+  display: block;
+}
+.about_diagnoctic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.consultation_text span {
+  display: block;
+}
+.description_diagnostic {
+  position: relative;
+  border: 1px;
+  background: #ffffff;
+  box-shadow: 0px 4px 23px rgba(197, 197, 197, 0.25);
+  border-radius: 15%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.description-title {
+  display: block;
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 18px;
+  color: #0f5172;
+  line-height: 50px;
+}
+.description-subtitle {
+  font-family: "Inter";
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #668195;
+}
+.image_about_btn {
+  position: relative;
+}
+.image_about {
+  border-radius: 0px 100px 0px 100px;
+  box-shadow: 15px 12px #6cc2f1;
+}
+
+.blurry_btn {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  color: #135585;
+  background: rgba(255, 255, 255, 0.37);
+  border: 1px solid #9bcff9;
+  padding: 25px 25px 25px 60px;
+  border-radius: 10px;
+  position: absolute;
+  right: 280px;
+  width: 300px;
+  bottom: -35px;
+  height: 100px;
+}
+.blurry_btn::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background: url("../img/start-icon.svg") no-repeat center;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+.lower-case {
+  font-weight: 400;
+}
+.heading-paragraph {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.frequent-diseases-holder {
+  width: calc(100 * var(--vw, 1vw));
+  background: white;
+  padding: 0px 180px 10px 180px;
+  margin: 100px 0 30px calc(50% - 50 * var(--vw, 1vw));
+}
+.frequent-diseases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 50px;
+}
+.woman_solo_shadow {
+  background: #6cc2f1;
+  border-radius: 0px 350px 0px 0px;
+}
+.diseases_overall {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.diseases_description {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(171, 171, 171, 0.25);
+  border-radius: 10px;
+  height: 175px;
+  text-align: left;
+  padding: 0 20px 0 20px;
+  width: 30%;
+  position: relative;
+}
+.diseases_description::after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  background: url("../img/Sign_in_circle_duotone.svg") no-repeat center;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+.diseases_description:last-child {
+  width: 70%;
+}
+
+.paragraph_subtitle {
+  display: block;
+  margin: 20px auto;
+  height: 63px;
+  font-size: 22px;
+  line-height: 32px;
+  color: #135585;
+  text-align: center;
+}
+.scary_facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.info-text {
+  background: #ffffff;
+  box-shadow: 0px 4px 28px rgba(179, 222, 255, 0.31);
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  max-width: 350px;
+  max-height: 212px;
+}
+.info-text img {
+  margin-bottom: 30px;
+}
+.description-facts {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f5172;
+  line-height: 22px;
+}
+.early-diagnosis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 17px;
+  margin: 50px 0;
+  align-items: center;
+  padding: 30px 10px 0 30px;
+}
+.off-cancer-text {
+  width: 548px;
+  height: 154px;
+  font-family: "Raleway";
+  font-style: bold;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 42px;
+  color: #002335;
+}
+.btn-off-cancer {
+  width: 227px;
+  height: 49px;
+  margin: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 19px rgba(73, 134, 169, 0.44);
+  border-radius: 8px;
+  font-family: "Raleway";
+  font-style: bold;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  color: #135585;
+}
+.why-we {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #135585;
+  margin: 0 auto;
+}
+h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  color: #002335;
+  width: 636px;
+  height: 143px;
+  margin: 0 auto;
+}
+
+.description-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.description-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 20px 40px 0px;
+  position: relative;
+}
+.description-first span {
+  text-align: left;
+  padding: 0 0 0 80px;
+}
+.description-first::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+
+  border-radius: 17px;
+  position: absolute;
+  bottom: 50%;
+}
+.description-first:first-child:before {
+  background: #ccd8f4 url("../img/9+.png") no-repeat center;
+}
+.description-first:last-child:before {
+  background: #ccd8f4 url("../img/Vector2.svg") no-repeat center;
+}
+.title-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #135585;
+}
+.subtitle-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #135585;
+}
+.description-overall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 0;
+  position: relative;
+}
+.description-second {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 30px;
+}
+.description-second::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  border-radius: 17px;
+  position: absolute;
+}
+/* .description-second::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  border-radius: 17px;
+  position: absolute;
+} */
+.description-second span {
+  text-align: left;
+  padding: 0 0 0 80px;
+}
+.description-second:first-child:before {
+  background: #ccd8f4 url("../img/Vector1child.svg") no-repeat center;
+}
+
+.description-second:nth-child(2)::before {
+  background: #ccd8f4 url("../img/Vector3child.svg") no-repeat center;
+}
+.description-second:last-child:before {
+  background: #ccd8f4 url("../img/Vector3shild.svg") no-repeat center;
+}
+
+.btn-reception {
+  display: block;
+  margin: 30px auto;
+  width: 389px;
+  height: 56px;
+  background: #45abe5;
+  box-shadow: 0px 4px 19px rgba(73, 134, 169, 0.44);
+  border-radius: 84px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  color: #ffffff;
+}
+.reception-mamolog span {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  color: #135585;
+  margin-bottom: 30px;
+}
+.risks-holder {
+  max-height: 800px;
+}
+.risks-holder.frequent-diseases-holder {
+  padding-bottom: 140px;
+}
+.risks-holder h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+.risks-descriptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 65px;
+  margin-top: 80px;
+}
+
+.risks-descriptions-text {
+  position: relative;
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #135585;
+}
+
+.risks-descriptions-text .text-bold {
+  font-weight: bold;
+}
+.risk-title {
+  padding: 20px 0;
+}
+.risks-descriptions-text .blurry_btn {
+  right: -200px;
+  width: 570px;
+  bottom: -115px;
+  height: 100px;
+}
+.risks-descriptions-text .blurry_btn::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background: url("../img/start-icon.svg") no-repeat center;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+.text-bold {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #135585;
+  margin-bottom: 20px;
+}
+
+.services-info-holder .paragraph_subtitle {
+  text-align: left;
+}
+.services-info {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #135585;
+  padding: 10px 0 0 30px;
+  position: relative;
+}
+.service {
+  margin-bottom: 35px;
+}
+.services-img-holder {
+  display: flex;
+  gap: 153px;
+}
+.services-info::before {
+  content: "";
+
+  width: 18px;
+  height: 18px;
+  background: url("../img/Subtract.png") no-repeat center;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+}
+.help-holder {
+  width: 411px;
+  height: 264px;
+  display: block;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(171, 171, 171, 0.25);
+  border-radius: 10px;
+  margin-top: 35px;
+}
+.help-holder span {
+  display: block;
+  padding: 20px 15px 0 15px;
+}
+.help-holder .def_button {
+  margin: 20px;
+}
+.introduction-doctors-holder {
+  margin-bottom: 0 !important;
+}
+.mamolog-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 60px;
+}
+.mamolog-description {
+  margin-top: 20px;
+}
+.mamolog-subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #668195;
+}
+
+.mamolog-bold {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #002335;
+}
+.mamolog-info-holder {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.mamolog-description-info {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgb(171 171 171 / 25%);
+  border-radius: 10px;
+  height: 175px;
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #668195;
+}
+
+.mamolog-description-info span {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #135585;
+  width: 92px;
+  height: 21px;
+}
+.mamolog-description-info .last-info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #135585;
+}
+
+.mamolog-description-info:first-child {
+  width: 28%;
+  height: 135px;
+}
+.mamolog-description-info:nth-child(2) {
+  width: 65%;
+  height: 135px;
+}
+.mamolog-description-info:last-child {
+  width: 95%;
+  height: 375px;
+}
+.image_doc {
+  position: relative;
+}
+.image_doc .blurry_btn {
+  padding: 20px 130px 20px 80px;
+  width: 461px;
+  height: 67px;
+  left: 0px;
+  bottom: -10px;
+}
+.image_doc .blurry_btn::before {
+  top: 17px;
+  left: 30px;
+}
+.mamolog-info-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  gap: 50px;
+  margin: 60px 0 60px 0;
+}
+
+.instruction-holder {
+  margin: 0;
+  background: #45abe5;
+}
+.instruction-holder.frequent-diseases-holder {
+  padding-bottom: 0 !important;
+}
+.instruction-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+}
+.instruction-info img {
+  height: auto;
+}
+.instruction-list {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.instruction-list span {
+  display: block;
+}
+.instruction-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.instruction-subtitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  color: #ffffff;
+  margin: 30px 0 35px 0;
+}
+input {
+  width: 535px;
+  height: 60px;
+  margin: 10px 0 10px 0;
+  background: #75c1ec;
+  border: 1px solid #ffffff;
+  border-radius: 46px;
+  padding-left: 20px;
+  font-size: 22px;
+  color: white;
+}
+input::placeholder {
+  color: #f6f6f6;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 43px;
+}
+.input-subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.download_instr {
+  width: 254px;
+  height: 49px;
+  background: #0060f0;
+  box-shadow: 0px 4px 19px rgba(73, 134, 169, 0.44);
+  border-radius: 40px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.map-holder {
+  height: 600px;
+  margin: 0;
+}
+.map-info {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+.map-holder h2 {
+  margin-bottom: 40px;
+}
+.footer-area {
+  padding: 30px 165px;
+}
+.footer-holder {
+  display: grid;
+  grid-template-columns: 20% 55% 20%;
+  gap: 30px;
+}
+.single-footer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #135585;
+  text-align: left;
+}
+/* .footer-holder ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-holder ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #135585;
+  text-align: left;
+} */
+.footer-holder a {
+  display: block;
+  color: #135585;
+  padding: 10px 0 0 0;
+}
+.footer-holder a:visited {
+  display: block;
+  color: #135585;
+}
+.work-time-holder {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgb(171 171 171 / 25%);
+  border-radius: 10px;
+  height: 175px;
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3f8abf;
+  width: 219px;
+  height: 246px;
+}
+.work-time-holder .address {
+  padding: 50px 0px 40px 24px;
+  position: relative;
+}
+
+.work-hours .address span:first-child::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: rgba(226, 243, 255, 0.3) url("../img/locatiom-marker-icon.jpg")
+    no-repeat center;
+  display: inline-block;
+  border-radius: 100%;
+  position: absolute;
+  top: 60px;
+  left: -10px;
+}
+.work-hours .address span:last-child::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: rgba(226, 243, 255, 0.3) url("../img/phone-icon.jpg") no-repeat
+    center;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  top: 105px;
+  left: -10px;
+}
+.work-hours-info-holder {
+  position: relative;
+}
+.work-hours-info-holder span:first-child::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: rgba(226, 243, 255, 0.3) url("../img/insta-icon.png") no-repeat
+    center;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  bottom: 194px;
+  left: 22px;
+}
+.work-hours-info-holder span:nth-child(2)::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: rgba(226, 243, 255, 0.3) url("../img/facebook-icon.png") no-repeat
+    center;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  bottom: 194px;
+  left: 67px;
+}
+.work-hours-info-holder span:last-child::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: rgba(226, 243, 255, 0.3) url("../img/utube-icon.png") no-repeat
+    center;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  bottom: 194px;
+  left: 110px;
+}
+.footer-logo-holder .logo-description {
+  padding: 40px 0 0 0;
+}
+
+/*---------adaptive---------*/
+
+@media all and (max-width: 1440px) {
+}
+@media all and (max-width: 1200px) {
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 992px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 575px) {
+}
+@media all and (max-width: 475px) {
+}
+@media all and (max-width: 425px) {
+}
+@media all and (max-width: 375px) {
+}
+@media all and (max-width: 360px) {
+}
+@media all and (max-width: 320px) {
+}
